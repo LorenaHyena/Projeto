@@ -1,0 +1,120 @@
+/* --- Estilos Gerais (para todas as páginas) --- */
+
+body {
+    background-color: #1a1a1a; /* Fundo escuro, quase preto */
+    color: #f0f0f0; /* Cor do texto principal (branco/cinza claro) */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão e legível */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #e62429; /* Vermelho-Aranha para os títulos principais */
+    text-align: center;
+    border-bottom: 3px solid #005c91; /* Linha azul escura abaixo do título */
+    padding-bottom: 10px;
+}
+
+hr {
+    border-color: #333; /* Linha horizontal com cor sutil */
+}
+
+p {
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas para melhor leitura */
+    font-size: 1.1em;
+}
+
+/* --- Estilos para Botões (Navegação) --- */
+
+button {
+    background-color: #e62429; /* Fundo Vermelho-Aranha */
+    color: white;
+    border: 2px solid #a1191d; /* Borda vermelha mais escura */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer; /* Muda o cursor para "mãozinha" */
+    margin: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Efeito suave de transição */
+}
+
+button:hover {
+    background-color: #a1191d; /* Vermelho escuro ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento de tamanho */
+}
+
+
+/* --- Estilos Específicos para a Página de Lista (lista.html) --- */
+
+ul[type="square"] > li {
+    color: #e62429; /* Deixa os títulos das Eras em vermelho */
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+ol {
+    background-color: #252525; /* Fundo um pouco mais claro para a lista de HQs */
+    border-left: 5px solid #005c91; /* Borda lateral azul */
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+ol li {
+    padding: 5px 0; /* Espaçamento entre os itens da lista */
+    color: #ccc;
+}
+
+
+/* --- Estilos Específicos para a Página da Tabela (tabela.html) --- */
+
+table {
+    width: 80%; /* Largura da tabela */
+    margin: 40px auto; /* Centraliza a tabela na página */
+    border-collapse: collapse; /* Remove o espaçamento entre as bordas das células */
+    border: 5px solid #005c91; /* Borda externa azul */
+}
+
+th {
+    background-color: #e62429; /* Fundo vermelho para o cabeçalho */
+    color: white;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+td {
+    background-color: #333;
+    padding: 12px;
+    text-align: center;
+}
+
+td a {
+    color: #63a1ff; /* Cor azul clara para os links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+td a:hover {
+    color: #ffffff; /* O link fica branco ao passar o mouse */
+}
+
+.cabecalho-principal {
+    display: flex; /* Ativa o modo Flexbox */
+    justify-content: center; /* Centraliza o conjunto (imagens + título) na página */
+    align-items: center; /* Alinha verticalmente a imagem e o texto */
+    gap: 20px; /* Cria um espaço entre as imagens e o título */
+}
+
+.cabecalho-principal h1 {
+    border-bottom: none; /* Remove a linha de baixo do h1 apenas neste cabeçalho */
+    padding-bottom: 0;
+}
+
+.logo-aranha {
+    max-width: 80px; /* Define a largura máxima da imagem. Altere se quiser! */
+    height: auto; /* Mantém a proporção da imagem */
+}
